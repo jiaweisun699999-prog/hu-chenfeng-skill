@@ -23,8 +23,16 @@
 </div>
 
 ---
+## 新版本效果示例（本次项目）
+本次仓库基于蒸馏数据，和前作者：https://github.com/Janlaywss/hu-chenfeng-skill.git  进行魔改升级<br>
+该项目已集成前端后端，拉取配置模型即用<br>
+模型可用本地ollama模型和deepseek模型，只用在main.py里面设置就可以<br>
+下图是本次魔改后的效果，交互和模拟程度已得到进一步飞跃<br>
+<img width="552" height="1176" alt="image-20260515135159381" src="https://github.com/user-attachments/assets/e779bc19-3470-4da7-bfca-85a657cce626" /><br>
+<img width="1266" height="1041" alt="image-20260515135055792" src="https://github.com/user-attachments/assets/c15cf1ef-b188-4a21-bc2f-7a3ee8cdab3e" /><br>
 
-## 效果示例
+
+## 前版本效果示例
 
 ```
 用户      ❯ 我想换手机，华为和iPhone之间犹豫。
@@ -123,7 +131,7 @@
 
 ---
 
-## 安装与部署指南 (云端/Linux)
+## 安装与部署指南 (Windows/云端/Linux)
 
 本项目基于 FastAPI + 大模型 API 构建，支持完整的网页前端对话与日志记录。以下是云服务器部署的标准流程：
 
@@ -153,7 +161,17 @@ DEEPSEEK_API_KEY=sk-在这里填入你的真实API密钥
 LLM_MODEL_NAME=deepseek-v4-pro
 ```
 *注：`.env` 文件已被配置在 `.gitignore` 中，绝对不会被上传到外网。*
+### Windows用户运行
+在hu-chenfeng-skill目录下运行<br>
+运行指令：python -m uvicorn app.main:app --reload<br>
+运行后：(.venv) PS D:\PythonProject\hu-chenfeng-skill> python -m uvicorn app.main:app --reload<br>
+INFO:     Will watch for changes in these directories: ['D:\\PythonProject\\hu-chenfeng-skill']<br>
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)<br>
+INFO:     Started reloader process [42584] using StatReload<br>
+<br>
+这个就是运行成功了，点击http://127.0.0.1:8000 进入服务进行启用<br>
 
+### 下面为Linux的配置，Windows用户不用理会
 ### 3. 在后台持久运行服务
 使用 `nohup` 让程序在后台持久运行，关闭终端也不会掉线：
 ```bash
