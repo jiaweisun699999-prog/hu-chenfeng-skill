@@ -1,0 +1,44 @@
+# Virtual environment (各种常见命名)
+.venv/
+venv/
+env/
+
+# IDE / 编辑器配置
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# MCP config contains absolute paths, don't commit
+.claude/settings.json
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# --- 敏感数据与日志配置 ---
+
+# 环境变量及密钥 (绝对不要上传)
+.env
+.env.*
+!.env.example
+
+# 服务端聊天日志
+logs/
+*.log
+
+# 打包文件与大模型文件
+fast-bge-small-zh-v1.5.tar.gz
+
+# Uvicorn / cpolar 后台输出
+web.log
+cpolar.log

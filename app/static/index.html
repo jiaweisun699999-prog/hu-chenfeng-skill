@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>户晨风.skill - AI对话演示</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="glass-panel chat-container">
+            <header class="chat-header">
+                <div class="avatar-container">
+                    <div class="avatar">风</div>
+                    <div class="status-indicator"></div>
+                </div>
+                <div class="header-info">
+                    <h1>户晨风.skill</h1>
+                    <p>消费现实主义视角 · 正在暴躁营业中</p>
+                </div>
+            </header>
+            
+            <div class="chat-messages" id="chatMessages">
+                <div class="message assistant-message glass-message">
+                    <div class="message-content">
+                        来，说，多大岁数？什么学历？在哪个城市？做什么工作的？月收入多少？用什么手机？直接说啊，速度。
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chat-input-container">
+                <form id="chatForm" class="input-form">
+                    <input type="text" id="messageInput" placeholder="请输入你的情况或问题..." autocomplete="off">
+                    <button type="submit" id="sendButton">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="22" y1="2" x2="11" y2="13"></line>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
